@@ -30,29 +30,29 @@ window.addEventListener("keydown", (event) => { // Arrow function para perceber 
     if(key === "ArrowUp" && yPosition > 0){ // Se a tecla pressionada for a seta para cima
                                             // E SE yPosition FOR MAIOR QUE 0
 
-        character.classList.add("turnUp"); // Roberto recebe a classe "turnUp" e se rotaciona
-        yPosition -= VELOCITY; // Roberto se move VELOCITY pixels para cima
+        character.classList.add("turnUp"); // Roberto recebe a classe "turnUp" e se rotaciona pelo CSS
+        yPosition -= VELOCITY; // yPosition se altera em VELOCITY pixels para cima
     }
 
     if(key === "ArrowDown" && yPosition < (SCREEN_HEIGHT-100)){ // Se a tecla pressionada for a seta para baixo
                                                               // E SE yPosition FOR MENOR QUE A ALTURA DA TELA -100 (para que Roberto não suma) 
         
-        character.classList.add("turnDown"); // Roberto recebe a classe "turnDown" e se rotaciona
-        yPosition += VELOCITY; // Roberto se move VELOCITY pixels para baixo
+        character.classList.add("turnDown"); // Roberto recebe a classe "turnDown" e se rotaciona pelo CSS
+        yPosition += VELOCITY; // yPosition se altera em VELOCITY pixels para baixo
     }
 
     if(key === "ArrowLeft" && xPosition > 0){ // Se a tecla pressionada for a seta para a esquerda
                                               // E SE xPosition FOR MAIOR QUE 0
 
-        character.classList.add("turnLeft"); // Roberto recebe a classe "turnLeft" e se rotaciona
-        xPosition -= VELOCITY; // Roberto se move VELOCITY pixels para a esquerda
+        character.classList.add("turnLeft"); // Roberto recebe a classe "turnLeft" e se rotaciona pelo CSS
+        xPosition -= VELOCITY; // xPosition se altera em VELOCITY pixels para a esquerda
     }
 
     if(key === "ArrowRight" && xPosition < (SCREEN_WIDTH-100)){ // Se a tecla pressionada for a seta para a direita
-                                                              // E SE yPosition FOR MENOR QUE A LARGURA DA TELA -100 (para que Roberto não suma)
+                                                                // E SE yPosition FOR MENOR QUE A LARGURA DA TELA -100 (para que Roberto não suma)
        
-        character.classList.add("turnRight"); // Roberto recebe a classe "turnRight" e se rotaciona
-        xPosition += VELOCITY; // Roberto se move VELOCITY pixels para a direita
+        character.classList.add("turnRight"); // Roberto recebe a classe "turnRight" e se rotaciona pelo CSS
+        xPosition += VELOCITY; // xPosition se altera em VELOCITY pixels para a direita
     }
 
     //------------------------------------------------------------//
